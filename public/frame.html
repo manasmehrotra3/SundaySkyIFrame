@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="https://resstg.sundaysky.com/anthem/embedded/sundaysky.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    window.sendVideoURL = function(data) {
+      var sskyPageSegments = ({ 'page': 'test'});
+      var sskyUserSegments = ({ 'userid': 'anthem', 'source': 'sms'});
+      sundaySky.create(data, {autoStart: true});
+    };
+  </script>
+</head>
+<body>
+  <div id="sundayskyDiv"></div>
+</body>
+</html>

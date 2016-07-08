@@ -1,0 +1,23 @@
+</!DOCTYPE html>
+<html>
+<head>
+  <title>Test Page</title>
+  <script type="text/javascript">
+    function init () {
+      var sskyPageSegments = ({ 'page': 'uxStyleGuide'});
+      var sskyUserSegments = ({ 'userid': 'anthem', 'source': 'email'});
+    }
+
+    init();
+  </script>
+  <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="bower_components/angular/angular.min.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="bower_components/angular-route/angular-route.min.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="controller.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body ng-app="test">
+<a href="#/">First Page</a>
+<a href="#secondPage">Second Page</a>
+<div ng-view></div>
+</body>
+</html>
